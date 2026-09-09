@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mansoordaya Chemicals Ltd | Retail Shop</title>
+<meta name="description" content="Mansoordaya Chemicals Ltd retail shop. Browse our products and order conveniently on WhatsApp.">
+<style>
+:root{--blue:#075fa9;--cyan:#19a9df;--dark:#10324a;--light:#f5f9fc;--text:#20313f;--white:#fff}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--light);line-height:1.5}
+header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.nav{max-width:1150px;margin:auto;padding:12px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{height:62px;width:auto;object-fit:contain}
+nav a{color:var(--dark);text-decoration:none;font-weight:700;margin-left:18px}
+.hero{background:linear-gradient(135deg,#075fa9,#12a6d8);color:#fff}
+.hero-inner{max-width:1150px;margin:auto;padding:70px 20px 75px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.hero h1{font-size:clamp(38px,6vw,64px);line-height:1.05;margin:0 0 18px}
+.hero p{font-size:20px;max-width:650px;margin:0 0 28px}
+.btn{display:inline-block;padding:14px 20px;border-radius:10px;text-decoration:none;font-weight:800;margin-right:10px}
+.btn-light{background:#fff;color:var(--blue)} .btn-wa{background:#1fae55;color:#fff}
+.hero-logo{background:#fff;border-radius:22px;padding:22px;box-shadow:0 15px 40px rgba(0,0,0,.15)}
+.hero-logo img{width:100%;display:block}
+section{max-width:1150px;margin:auto;padding:55px 20px}
+.section-title{text-align:center;margin-bottom:30px} .section-title h2{font-size:34px;margin:0 0 8px;color:var(--dark)}
+.filters{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filter{border:1px solid #c8d8e4;background:#fff;padding:9px 15px;border-radius:999px;cursor:pointer;font-weight:700}
+.filter.active{background:var(--blue);color:#fff;border-color:var(--blue)}
+.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.product-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 5px 20px rgba(18,54,80,.08);display:flex;flex-direction:column}
+.product-image{height:310px;background:#fff;display:flex;align-items:center;justify-content:center;padding:15px}
+.product-image img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain}
+.product-info{padding:18px;display:flex;flex-direction:column;flex:1}
+.product-info h3{margin:7px 0;font-size:19px;color:var(--dark)} .product-info p{margin:0 0 16px;color:#607585}
+.tag{font-size:12px;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.5px}
+.order-btn{margin-top:auto;text-align:center;background:var(--blue);color:#fff;text-decoration:none;padding:11px;border-radius:9px;font-weight:800}
+.about{background:#fff} .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.info-box{background:var(--light);padding:25px;border-radius:16px}
+.info-box h3{color:var(--dark);margin-top:0}
+.contact{background:#eaf6fc} .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.contact-card{background:#fff;border-radius:16px;padding:25px}
+.contact-card a{color:var(--blue);font-weight:700;text-decoration:none}
+footer{background:#0b2c42;color:#dceaf2;text-align:center;padding:28px 20px}
+.small{font-size:14px;color:#7a8e9b}
+@media(max-width:800px){.hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr)}nav a{display:none}}
+@media(max-width:520px){.products{grid-template-columns:1fr}.product-image{height:280px}.hero-inner{padding-top:45px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a href="#home"><img class="logo" src="assets/logo.jpg" alt="Mansoordaya Chemicals Ltd"></a>
+    <nav><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Your Trusted Retail Shop</h1>
+      <p>Mansoordaya Chemicals Ltd — quality healthcare, personal care and household products, conveniently available in Dar es Salaam.</p>
+      <a class="btn btn-light" href="#products">View Products</a>
+      <a class="btn btn-wa" href="https://wa.me/255678842740" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+    <div class="hero-logo"><img src="assets/logo.jpg" alt="Mansoordaya Chemicals Ltd logo"></div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="section-title">
+    <h2>Our Products</h2>
+    <p>Browse some of our retail products. Prices and availability can be confirmed on WhatsApp.</p>
+  </div>
+  <div class="filters">
+    <button class="filter active" data-filter="All">All</button>
+    <button class="filter" data-filter="Mosquito & Insect Protection">Mosquito & Insect</button>
+    <button class="filter" data-filter="Pest Control">Pest Control</button>
+    <button class="filter" data-filter="Oral Care">Oral Care</button>
+    <button class="filter" data-filter="Cough & Cold">Cough & Cold</button>
+    <button class="filter" data-filter="Respiratory Care">Respiratory Care</button>
+  </div>
+  <div class="products">
+    <article class="product-card" data-category="Mosquito & Insect Protection">
+        <div class="product-image"><img src="assets/xpel-mosquito-jelly.jpg" alt="X-Pel Mosquito Repellent Jelly" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Mosquito & Insect Protection</span>
+          <h3>X-Pel Mosquito Repellent Jelly</h3>
+          <p>Contact us for price and availability.</p>
+          <a class="order-btn" href="https://wa.me/255678842740?text=X-Pel%20Mosquito%20Repellent%20Jelly%20-%20I%20would%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+<article class="product-card" data-category="Mosquito & Insect Protection">
+        <div class="product-image"><img src="assets/nobite-rollon.jpg" alt="No-Bite Roll-On Insect Repellent" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Mosquito & Insect Protection</span>
+          <h3>No-Bite Roll-On Insect Repellent</h3>
+          <p>Contact us for price and availability.</p>
+          <a class="order-btn" href="https://wa.me/255678842740?text=No-Bite%20Roll-On%20Insect%20Repellent%20-%20I%20would%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+<article class="product-card" data-category="Mosquito & Insect Protection">
+        <div class="product-image"><img src="assets/nobite-insect-repellent.jpg" alt="No-Bite Insect Repellent" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Mosquito & Insect Protection</span>
+          <h3>No-Bite Insect Repellent</h3>
+          <p>Contact us for price and availability.</p>
+          <a class="order-btn" href="https://wa.me/255678842740?text=No-Bite%20Insect%20Repellent%20-%20I%20would%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+<article class="product-card" data-category="Pest Control">
+        <div class="product-image"><img src="assets/xpel-cockroach-killer.jpg" alt="X-Pel Super Cockroach Killer" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Pest Control</span>
+          <h3>X-Pel Super Cockroach Killer</h3>
+          <p>Contact us for price and availability.</p>
+          <a class="order-btn" href="https://wa.me/255678842740?text=X-Pel%20Super%20Cockroach%20Killer%20-%20I%20would%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+<article class="product-card" data-category="Pest Control">
+        <div class="product-image"><img src="assets/xpel-household-aerosol.jpg" alt="X-Pel Household Aerosol" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Pest Control</span>
+          <h3>X-Pel Household Aerosol</h3>
+          <p>Contact us for price and availability.</p>
+          <a class="order-btn" href="https://wa.me/255678842740?text=X-Pel%20Household%20Aerosol%20-%20I%20would%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+<article class="product-card" data-category="Oral Care">
+        <div class="product-image"><img src="assets/medi-oral-fluoride-mint.jpg" alt="Medi-Oral Daily Fluoride Mint" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Oral Care</span>
+          <h3>Medi-Oral Daily Fluoride Mint</h3>
+          <p>Contact us for price and availability.</p>
+          <a class="order-btn" href="https://wa.me/255678842740?text=Medi-Oral%20Daily%20Fluoride%20Mint%20-%20I%20would%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+<article class="product-card" data-category="Oral Care">
+        <div class="product-image"><img src="assets/medi-oral-mouthwash.jpg" alt="Medi-Oral Antiseptic Mouthwash" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Oral Care</span>
+          <h3>Medi-Oral Antiseptic Mouthwash</h3>
+          <p>Contact us for price and availability.</p>
+          <a class="order-btn" href="https://wa.me/255678842740?text=Medi-Oral%20Antiseptic%20Mouthwash%20-%20I%20would%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+<article class="product-card" data-category="Cough & Cold">
+        <div class="product-image"><img src="assets/emdelyn-dm.jpg" alt="Emdelyn DM 100 ml" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Cough & Cold</span>
+          <h3>Emdelyn DM 100 ml</h3>
+          <p>Contact us for price and availability.</p>
+          <a class="order-btn" href="https://wa.me/255678842740?text=Emdelyn%20DM%20100%20ml%20-%20I%20would%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+<article class="product-card" data-category="Respiratory Care">
+        <div class="product-image"><img src="assets/salbutamol-syrup.jpg" alt="Salbutamol Syrup 2 mg/5 ml" loading="lazy"></div>
+        <div class="product-info">
+          <span class="tag">Respiratory Care</span>
+          <h3>Salbutamol Syrup 2 mg/5 ml</h3>
+          <p>Contact us for price and availability.</p>
+          <a class="order-btn" href="https://wa.me/255678842740?text=Salbutamol%20Syrup%202%20mg/5%20ml%20-%20I%20would%20like%20to%20order." target="_blank" rel="noopener">Order on WhatsApp</a>
+        </div>
+      </article>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="section-title"><h2>About Mansoordaya Chemicals Ltd</h2></div>
+  <div class="about-grid">
+    <div class="info-box"><h3>Retail Made Easy</h3><p>Find products online, ask about availability, and contact our team directly through WhatsApp. We can expand this catalogue as you add more products.</p></div>
+    <div class="info-box"><h3>Visit Our Shop</h3><p><strong>IPS Building, Samora / Azikiwe Street</strong><br>Dar es Salaam, Tanzania</p><p>Monday–Saturday: 8:30 AM–5:30 PM</p></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="section-title"><h2>Contact Us</h2><p>For prices, availability and orders.</p></div>
+  <div class="contact-grid">
+    <div class="contact-card"><h3>WhatsApp / Phone</h3><p><a href="https://wa.me/255678842740" target="_blank" rel="noopener">+255 678 842 740</a></p><a class="btn btn-wa" href="https://wa.me/255678842740" target="_blank" rel="noopener">Start WhatsApp Chat</a></div>
+    <div class="contact-card"><h3>Email & Location</h3><p><a href="mailto:kamesh@Mdchemicals.com">kamesh@Mdchemicals.com</a></p><p><a href="https://maps.google.com/?q=IPS%20Building%2C%20Samora%20Azikiwe%20Street%2C%20Dar%20es%20Salaam" target="_blank" rel="noopener">Open location in Google Maps</a></p></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <strong>Mansoordaya Chemicals Ltd</strong><br>
+  Retail Shop • Dar es Salaam, Tanzania<br>
+  <span class="small">© <span id="year"></span> Mansoordaya Chemicals Ltd. All rights reserved.</span>
+</footer>
+
+<script>
+const buttons = document.querySelectorAll('.filter');
+const cards = document.querySelectorAll('.product-card');
+buttons.forEach(btn => btn.addEventListener('click', () => {
+  buttons.forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const f = btn.dataset.filter;
+  cards.forEach(card => card.style.display = (f === 'All' || card.dataset.category === f) ? '' : 'none');
+}));
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
